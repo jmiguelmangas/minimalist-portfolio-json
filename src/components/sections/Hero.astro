@@ -1,0 +1,72 @@
+---
+import { basics } from "@cv";
+import Section from "./src/components/Section.astro";
+import Mail from "./src/icons/Mail.astro";
+import Phone from "./src/icons/Phone.astro";
+import X from "./src/icons/X.astro";
+import LinkedIn from "./src/icons/LinkedIn.astro";
+import Github from "./src/icons/Github.astro";
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, region } = location;
+const SOCIAL_ICONS: Record<string, any> = {
+  Github,
+  X,
+  LinkedIn,
+};
+---
+
+<Section>
+  <div class="container">
+    <div class="info">
+      <h1>{name}</h1>
+      <h2>{label}</h2>
+      <span><!--Robar icono -->{city},{region}</span>
+      <footer>
+        {
+          email && (
+            <a
+              href={`mailto:${email}`}
+              title={`Send an email to ${name} to the address ${email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Mail />
+            </a>
+          )
+        }
+        {
+          phone && (
+            <a
+              href={`tel:${phone}`}
+              title={`Give a call to ${name} to the phone number ${phone}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Phone />
+            </a>
+          )
+        }
+        {
+          profiles.map(({ network, url, username }) => {
+            const Icon = SOCIAL_ICONS[network];
+            return (
+              <a
+                href={url}
+                title={`Visit ${name} profile on ${network}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon />
+              </a>
+            );
+          })
+        }
+      </footer>
+      <figure>
+        <img src={image} alt={name} />
+      </figure>
+    </div>
+  </div>
+
+  <style></style>
+</Section>
