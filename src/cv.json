@@ -42,16 +42,65 @@
       ]
     },
     {
-      "name": "Company",
-      "position": "President",
-      "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description…",
+      "name": "Portrait Photographer",
+      "position": "Freelance",
+      "url": "https://josemiguelmangas.com",
+      "startDate": "2010-01-01",
+      "endDate": null,
+      "summary": "I have been a freelance portrait photographer and business owner for 14 years. I have worked for brands such as Vogue Italia, Huda Beauty and the inditex Group in Europe and the United Arab Emirates.",
       "highlights": [
           "Started the company"]
+    },
+    {
+      "name": "GoShopia and Dubai Fashion News",
+      "position": "CTO and Web Developer",
+      "url": "https://goshopia.com",
+      "startDate": "2015-01-01",
+      "endDate": "2015-12-01",
+      "summary": "Dubai Fashion News is the number one online magazine about the Dubai and Middle East fashion industry, Goshopia is an e-commerce that sells sustainable luxury fashion around the world",
+      "highlights": [
+          "Started the company"]
+    },
+    {
+      "name": "K-tuin",
+      "position": "Apple System Engineer - Software Specialist",
+      "url": "https://josemiguelmangas.com",
+      "startDate": "2005-01-01",
+      "endDate": "2010-01-01",
+      "summary": "K-tuin SI is a company specialized in the sale and technical service of Apple products, offering a wide range of devices, accessories, and computer solutions for users and businesses.",
+      "highlights": [
+          "Started the company"]
+    },
+    {
+      "name": "Emergia - Jazztel",
+      "position": "Freelance",
+      "url": "https://josemiguelmangas.com",
+      "startDate": "2005-01-01",
+      "endDate": "2004-01-01",
+      "summary": "Emergia is a leading company in technology customer service outsourcing. Within Emergia, I worked for Jazztel, one of the Top 4 Communications Companies nationwide in Spain.",
+      "highlights": [
+          "Started the company"]
+    },
+    {
+      "name": "Editorial Planeta Sistemas",
+      "position": "Server Task Automation Technician",
+      "url": "https://josemiguelmangas.com",
+      "startDate": "2004-01-01",
+      "endDate": "2003-01-01",
+      "summary": "Planeta is the largest international Spanish-language publishing company and it is part of the AtresMedia conglomerate. Within Planeta Sistemas, the IT subdivision of the group, I implemented backup systems and spam review on the group's servers",
+      "highlights": [
+          "Strted the company"]
+    },
+    {
+      "name": "PWC - Telefónica",
+      "position": "Linux Scripting Technician - Ethical Hacking",
+      "url": "https://josemiguelmangas.com",
+      "startDate": "2003-01-01",
+      "endDate": "2002-01-01",
+      "summary": "Telefónica is one of the largest technology companies in Spain and Latin America. While consulting for Telefónica through PWC, we developed a fault-finding system for both customer databases and Telefónica group websites (Escudo Project).",
+      "highlights": [
+          "Strted the company"]
     }
-
   ],
     "volunteer": [{
       "organization": "Organization",
