@@ -6,7 +6,7 @@
       "email": "jmmangas@gmail.com",
       "phone": "+34667475165",
       "url": "https://josemiguelmangas.com",
-      "summary": "A summary of John Doe…",
+      "summary": "Python Full Stack Developer with 1 year of experience in Python Development but many years in automation development, front-end design, back-end database management. Experience working for major companies such as Telefónica, Grupo Planeta, and Apple.",
       "location": {
         "address": "2712 Broadway St",
         "postalCode": "CA 94115",
@@ -31,6 +31,17 @@
       }]
     },
     "work": [{
+      "name": "Python Developer and Data Analyst",
+      "position": "Freelance",
+      "url": "https://company.com",
+      "startDate": "2023-09-01",
+      "endDate": null,
+      "summary": "As a freelance Python Developer deeply engaged in diverse community projects, I not only sharpen my Python skills but also contribute actively to collaborative initiatives. My joy lies in supporting and sharing insights with fellow developers, fostering a culture of growth and knowledge-sharing. Engaging in these projects fuels my passion for learning and allows me to master various aspects of Python development. Currently, I'm also pursuing a professional certificate in IBM Data Science, delving into my initial data analysis projects.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
       "name": "Company",
       "position": "President",
       "url": "https://company.com",
@@ -38,9 +49,10 @@
       "endDate": "2014-01-01",
       "summary": "Description…",
       "highlights": [
-        "Started the company"
-      ]
-    }],
+          "Started the company"]
+    }
+
+  ],
     "volunteer": [{
       "organization": "Organization",
       "position": "Volunteer",
