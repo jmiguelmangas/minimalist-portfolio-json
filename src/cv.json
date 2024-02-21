@@ -15,9 +15,19 @@
         "region": "Spain"
       },
       "profiles": [{
-        "network": "Twitter",
-        "username": "john",
-        "url": "https://twitter.com/john"
+        "network": "X",
+        "username": "jmiguelmangas",
+        "url": "https://twitter.com/jmiguelmangas"
+      },
+      {
+        "network":"Github",
+        "username":"jmiguelmangas",
+        "url":"https://github.com/jmiguelmangas"
+      },
+      {
+        "network":"LinkedIn",
+        "username":"josemmangasdeveloper",
+        "url":"https://www.linkedin.com/in/josemmangasdeveloper/"
       }]
     },
     "work": [{
