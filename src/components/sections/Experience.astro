@@ -1,5 +1,6 @@
 ---
 import Section from "./src/components/Section.astro";
+import Arrow from "./src/icons/arrow.astro";
 import { work } from "@cv";
 ---
 
@@ -24,7 +25,18 @@ import { work } from "@cv";
                 </header>
                 <footer>
                   <p>{summary}</p>
-                  <div class="highlights">{highlights}</div>
+                  <ul class="highlights">
+                    {highlights.map((highlight) => {
+                      return (
+                        <li>
+                          <span>
+                            <Arrow />
+                            {highlight}
+                          </span>
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </footer>
               </article>
             </li>
@@ -65,10 +77,16 @@ import { work } from "@cv";
     font-size: 0.85rem;
   }
   .highlights {
-    margin-top: 5px;
-    align-items: center;
-    padding-left: 4rem;
-    font-size: 0.9rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    gap: 32px;
+    font-size: 1rem;
     color: #666;
+  }
+  footer span {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 0.9rem;
   }
 </style>
