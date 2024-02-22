@@ -24,6 +24,7 @@ import { work } from "@cv";
                 </header>
                 <footer>
                   <p>{summary}</p>
+                  <div class="highlights">{highlights}</div>
                 </footer>
               </article>
             </li>
@@ -43,6 +44,7 @@ import { work } from "@cv";
     font-weight: 500;
     color: #111;
     margin-bottom: 8px;
+    text-wrap: balance;
   }
   article h4 {
     color: #222;
@@ -53,7 +55,7 @@ import { work } from "@cv";
   header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 2px;
   }
   time {
@@ -61,5 +63,12 @@ import { work } from "@cv";
     top: 0;
     color: #888;
     font-size: 0.85rem;
+  }
+  .highlights {
+    margin-top: 5px;
+    align-items: center;
+    padding-left: 4rem;
+    font-size: 0.9rem;
+    color: #666;
   }
 </style>

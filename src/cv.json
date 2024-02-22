@@ -38,7 +38,7 @@
       "endDate": null,
       "summary": "As a freelance Python Developer deeply engaged in diverse community projects, I not only sharpen my Python skills but also contribute actively to collaborative initiatives. My joy lies in supporting and sharing insights with fellow developers, fostering a culture of growth and knowledge-sharing. Engaging in these projects fuels my passion for learning and allows me to master various aspects of Python development. Currently, I'm also pursuing a professional certificate in IBM Data Science, delving into my initial data analysis projects.",
       "highlights": [
-        "Started the company"
+        "Started the company","Ruin the Company"
       ]
     },
     {
@@ -145,14 +145,63 @@
       "summary": "Description…"
     }],
     "skills": [{
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ]
-    }],
+      "name": "HTML",
+      "level": "Master"
+    },
+    {
+      "name": "CSS",
+      "level": "Master"
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master"
+    },
+    {
+      "name": "Astro",
+      "level": "Master"
+    },
+    {
+      "name": "Python",
+      "level": "Master"
+    },
+    {
+      "name": "Django",
+      "level": "Master"
+    },
+    {
+      "name": "Pandas",
+      "level": "Master"
+    },
+    {
+      "name": "Beautiful Soup",
+      "level": "Master"
+    },
+    {
+      "name": "SQL",
+      "level": "Master"
+    },
+    {
+      "name": "Wordpress",
+      "level": "Master"
+    },
+    {
+      "name": "GIT",
+      "level": "Master"
+    },
+    {
+      "name": "Github",
+      "level": "Master"
+    },
+    {
+      "name": "Swift",
+      "level": "Master"
+    }   
+    
+    
+    
+    
+  ],
+    
     "languages": [{
       "language": "English",
       "fluency": "Native speaker"
