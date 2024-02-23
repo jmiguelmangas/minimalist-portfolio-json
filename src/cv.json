@@ -196,10 +196,6 @@
       "name": "Swift",
       "level": "Master"
     }   
-    
-    
-    
-    
   ],
     
     "languages": [{
@@ -222,9 +218,47 @@
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
       "description": "Description...",
+      "isActive": "True",
       "highlights": [
+        "Won award at AIHacks 2016",
         "Won award at AIHacks 2016"
       ],
-      "url": "https://project.com/"
-    }]
+      "url": "https://project.com/",
+      "labels": [
+        "HTML",
+        "CSS"
+      ]
+    },{
+      "name": "Project",
+    "startDate": "2019-01-01",
+    "endDate": "2021-01-01",
+    "description": "Description...",
+    "isActive": "True",
+    "highlights": [
+      "Won award at AIHacks 2016",
+      "Won award at AIHacks 2016"
+    ],
+    "url": "https://project.com/",
+    "labels": [
+      "HTML",
+      "CSS"
+    ]
+    },
+    {
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "isActive": "True",
+      "highlights": [
+        "Won award at AIHacks 2016",
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/",
+ "labels": [
+   "HTML",
+   "CSS"
+ ]
+    }
+  ]
   }

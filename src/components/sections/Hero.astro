@@ -22,7 +22,20 @@ const SOCIAL_ICONS: Record<string, any> = {
       <h1>{name}</h1>
       <h2>{label}</h2>
       <span><WorldMap />{city},{region}</span>
-      <footer>
+      <footer class="print">
+        <span>Email: {email}</span>
+        <span>Phone: {phone}</span>
+        {
+          profiles.map(({ network, username }) => {
+            return (
+              <span>
+                {network}: {username}
+              </span>
+            );
+          })
+        }
+      </footer>
+      <footer class="no-print">
         {
           email && (
             <a
@@ -69,6 +82,7 @@ const SOCIAL_ICONS: Record<string, any> = {
     </figure>
   </div>
 </Section>
+
 <style>
   .container {
     display: flex;
@@ -108,12 +122,12 @@ const SOCIAL_ICONS: Record<string, any> = {
     font-size: 0.85rem;
     letter-spacing: 0.1rem;
   }
-  footer {
+  .no-print {
     display: flex;
     gap: 4px;
     margin-top: 8px;
   }
-  footer a {
+  .no-print a {
     color: #444;
     display: inline-flex;
     align-items: center;
@@ -124,9 +138,23 @@ const SOCIAL_ICONS: Record<string, any> = {
     border-radius: 6px;
     transition: all 0.3s ease;
   }
-  footer a:hover {
+  .no-print a:hover {
     background: #555;
     border: 1px solid #444;
     color: #fff;
+  }
+  .print {
+    display: none;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    gap: 5px;
+  }
+  @media print {
+    .print {
+      display: block !important;
+    }
+    .no-print {
+      display: none !important;
+    }
   }
 </style>
