@@ -7,12 +7,14 @@ import X from "./src/icons/X.astro";
 import LinkedIn from "./src/icons/LinkedIn.astro";
 import Github from "./src/icons/Github.astro";
 import WorldMap from "./src/icons/WorldMap.astro";
+import { callGetStaticPaths } from "node_modules/astro/dist/core/render/route-cache";
 const { name, label, image, location, profiles, phone, email } = basics;
 const { city, region } = location;
 const SOCIAL_ICONS: Record<string, any> = {
   Github,
   X,
   LinkedIn,
+  Phone,
 };
 ---
 
@@ -45,18 +47,6 @@ const SOCIAL_ICONS: Record<string, any> = {
               rel="noopener noreferrer"
             >
               <Mail />
-            </a>
-          )
-        }
-        {
-          phone && (
-            <a
-              href={`tel:${phone}`}
-              title={`Give a call to ${name} to the phone number ${phone}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Phone />
             </a>
           )
         }

@@ -17,17 +17,26 @@
       "profiles": [{
         "network": "X",
         "username": "jmiguelmangas",
-        "url": "https://twitter.com/jmiguelmangas"
+        "url": "https://twitter.com/jmiguelmangas",
+        "command":"X"
       },
       {
         "network":"Github",
         "username":"jmiguelmangas",
-        "url":"https://github.com/jmiguelmangas"
+        "url":"https://github.com/jmiguelmangas",
+        "command":"G"
       },
       {
         "network":"LinkedIn",
         "username":"josemmangasdeveloper",
-        "url":"https://www.linkedin.com/in/josemmangasdeveloper/"
+        "url":"https://www.linkedin.com/in/josemmangasdeveloper/",
+        "command":"L"
+      },
+      {
+        "network":"Phone",
+        "username":"+34667475165",
+        "url":"tel:34667475165",
+        "command":"C"
       }]
     },
     "work": [{
