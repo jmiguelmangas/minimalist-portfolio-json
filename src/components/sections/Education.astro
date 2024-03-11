@@ -1,5 +1,95 @@
 ---
 import Section from "./src/components/Section.astro";
+import { education } from "@cv";
 ---
 
-<Section title="Education" />
+<Section title="Education">
+  <ul>
+    {
+      education.map(
+        ({ institution, startDate, endDate, area,studyType, courses, highlights }) => {
+          const startYear = new Date(startDate).getFullYear();
+          const endYear =
+            endDate != null ? new Date(endDate).getFullYear() : "Current Job";
+          const years = `${startYear} - ${endYear}`;
+          return (
+            <li>
+              <article>
+                <header>
+                  <div>
+                    <h3>{studyType} in {area}</h3>
+                    <h4>{institution}</h4>
+                  </div>
+                  <time>{years}</time>
+                </header>
+                <footer>
+                  <ul class="courses">
+  {courses.map((course) => {
+    return (
+      <li>
+        <span>{course}</span>
+      </li>
+    );
+  })}
+                  <ul class="highlights">
+                    {highlights.map((highlight) => {
+                      return (
+                        <li>
+                          <span>{highlight}</span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </footer>
+              </article>
+            </li>
+          );
+        }
+      )
+    }
+  </ul>
+</Section>
+<style>
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  article h3 {
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 8px;
+    text-wrap: balance;
+  }
+  article h4 {
+    color: #222;
+    font-weight: 400;
+    letter-spacing: 0.09rem;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  time {
+    position: relative;
+    top: 0;
+    color: #222;
+    font-size: 0.85rem;
+  }
+  .highlights {
+    padding-top: 1rem;
+    padding-left: 3rem;
+    gap: 32px;
+    font-size: 1rem;
+    color: #666;
+  }
+  footer span {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 0.8rem;
+  }
+</style>

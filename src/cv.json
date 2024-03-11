@@ -47,7 +47,6 @@
       "endDate": null,
       "summary": "As a freelance Python Developer deeply engaged in diverse community projects, I not only sharpen my Python skills but also contribute actively to collaborative initiatives. My joy lies in supporting and sharing insights with fellow developers, fostering a culture of growth and knowledge-sharing. Engaging in these projects fuels my passion for learning and allows me to master various aspects of Python development. Currently, I'm also pursuing a professional certificate in IBM Data Science, delving into my initial data analysis projects.",
       "highlights": [
-        "Started the company","Ruin the Company"
       ]
     },
     {
@@ -58,7 +57,7 @@
       "endDate": null,
       "summary": "I have been a freelance portrait photographer and business owner for 14 years. I have worked for brands such as Vogue Italia, Huda Beauty and the inditex Group in Europe and the United Arab Emirates.",
       "highlights": [
-          "Started the company"]
+          "I used my software development skills to create 3 websites, from scratch using Wordpress and Php.","Increased web traffic in 300% the visitors in my brand websites using SEO optimization and html5 good practices."]
     },
     {
       "name": "GoShopia and Dubai Fashion News",
@@ -68,7 +67,7 @@
       "endDate": "2015-12-01",
       "summary": "Dubai Fashion News is the number one online magazine about the Dubai and Middle East fashion industry, Goshopia is an e-commerce that sells sustainable luxury fashion around the world",
       "highlights": [
-          "Started the company"]
+          "I comprehensively developed an e-commerce platform and a digital magazine from conception to implementation using WordPress."]
     },
     {
       "name": "K-tuin",
@@ -78,7 +77,7 @@
       "endDate": "2010-01-01",
       "summary": "K-tuin SI is a company specialized in the sale and technical service of Apple products, offering a wide range of devices, accessories, and computer solutions for users and businesses.",
       "highlights": [
-          "Started the company"]
+          "I developed a work method for technical service, automating tasks through scripting. Reducing 50% the technical service time for a hardware issue, and more than 80% in software issues.","I automated and improved the fault diagnosis system in hardware and software for devices using programming. Reducing the diagnosis time in more than 400%."]
     },
     {
       "name": "Emergia - Jazztel",
@@ -88,7 +87,7 @@
       "endDate": "2004-01-01",
       "summary": "Emergia is a leading company in technology customer service outsourcing. Within Emergia, I worked for Jazztel, one of the Top 4 Communications Companies nationwide in Spain.",
       "highlights": [
-          "Started the company"]
+          "I implemented an incident response protocol for cloud-related issues and data recovery in case of loss with a successful rate for lost data of 98%.","Additionally, I developed an operational manual for colleagues in the event of network incidents with computers based on Mac OS..It helps more than 20 people to reduce and endorse their knowledge about that OS."]
     },
     {
       "name": "Editorial Planeta Sistemas",
@@ -98,7 +97,7 @@
       "endDate": "2003-01-01",
       "summary": "Planeta is the largest international Spanish-language publishing company and it is part of the AtresMedia conglomerate. Within Planeta Sistemas, the IT subdivision of the group, I implemented backup systems and spam review on the group's servers",
       "highlights": [
-          "Strted the company"]
+          "Developed backup systems, automation, and security control for email and Lotus Notes reducing filtering time in more than 50% and increasing the group email security by adding spam filters and phishing spam alarms.","Led a team of 3 people, overseeing their tasks and reporting directly to the group's management."]
     },
     {
       "name": "PWC - Telefónica",
@@ -108,32 +107,41 @@
       "endDate": "2002-01-01",
       "summary": "Telefónica is one of the largest technology companies in Spain and Latin America. While consulting for Telefónica through PWC, we developed a fault-finding system for both customer databases and Telefónica group websites (Escudo Project).",
       "highlights": [
-          "Strted the company"]
+          "I developed a scripting system to automate tasks for ethical hacking. reducing the critical time of server maintenance during the ethical hacking time in more than 80%.","I worked internationally with more than 15 companies within the Telefónica group fixing over 400 security holes during the project."]
     }
   ],
-    "volunteer": [{
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
-      ]
-    }],
     "education": [{
-      "institution": "University",
+      "institution": "IES Islas Filipinas",
       "url": "https://institution.com/",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "score": "4.0",
+      "area": "App Development",
+      "studyType": "Technical Degree",
+      "startDate": "2001-09-01",
+      "endDate": "2003-09-01",
+      "score": "9.0",
       "courses": [
+        "SQL and Database management",
+        "Development with C, C++",
+        "Software Engineering"
+      ],
+      "highlights": [
         "DB1101 - Basic SQL"
       ]
-    }],
+
+    },{"institution": "IES Islas Filipinas",
+    "url": "https://www.educa2.madrid.org/web/centro.ies.islasfilipinas.madrid",
+    "area": "App Development",
+    "studyType": "Technical Degree",
+    "startDate": "2001-09-01",
+    "endDate": "2003-09-01",
+    "score": "9.0",
+    "courses": [
+      "SQL and Database management",
+      "Development with C, C++",
+      "Software Engineering"
+    ],
+    "highlights": [
+      "DB1101 - Basic SQL"
+    ]}],
     "awards": [{
       "title": "Award",
       "date": "2014-11-01",
@@ -223,34 +231,19 @@
       "reference": "Reference…"
     }],
     "projects": [{
-      "name": "Project",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "isActive": "True",
-      "highlights": [
-        "Won award at AIHacks 2016",
-        "Won award at AIHacks 2016"
-      ],
-      "url": "https://project.com/",
-      "labels": [
-        "HTML",
-        "CSS"
-      ]
-    },{
-      "name": "Project",
-    "startDate": "2019-01-01",
-    "endDate": "2021-01-01",
-    "description": "Description...",
+      "name": "Top 4 Football Players Progression",
+    "startDate": "2023",
+    "endDate": "Currently Working",
+    "description": "Personal Project based on real statistics from Premier League, Bundesliga and La Liga from Spain in which I try to solve why Bellingham, Haaland, Mbappe and Vinicius Jr. are progressing so much during the last two years.",
     "isActive": "True",
     "highlights": [
-      "Won award at AIHacks 2016",
-      "Won award at AIHacks 2016"
+      "Insights about how they are improving their Skills","Follow up during the current season"
+  
     ],
-    "url": "https://project.com/",
+    "url": "https://.com/",
     "labels": [
-      "HTML",
-      "CSS"
+      "Python",
+      "Panda","Data Science","MatPlotLyb"
     ]
     },
     {
