@@ -1,6 +1,8 @@
 ---
 import Section from "./src/components/Section.astro";
 import { education } from "@cv";
+import Education from "./src/icons/education.astro";
+
 ---
 
 <Section title="Education">
@@ -16,31 +18,26 @@ import { education } from "@cv";
             <li>
               <article>
                 <header>
-                  <div>
+      
+                    <span class="edulogo"><Education /></span>
+                    <subheader>
                     <h3>{studyType} in {area}</h3>
                     <h4>{institution}</h4>
-                  </div>
-                  <time>{years}</time>
+                    <time>{years}</time>
+                    </subheader>
+                  
                 </header>
                 <footer>
                   <ul class="courses">
-  {courses.map((course) => {
-    return (
-      <li>
-        <span>{course}</span>
-      </li>
-    );
+                    {courses.map((course) => {
+                    return (
+                      <li>
+                      <span>• {course}</span>
+                      </li>
+                    );
   })}
-                  <ul class="highlights">
-                    {highlights.map((highlight) => {
-                      return (
-                        <li>
-                          <span>{highlight}</span>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </footer>
+          
+
               </article>
             </li>
           );
@@ -53,16 +50,17 @@ import { education } from "@cv";
   ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    gap: 1.2rem;
   }
   article h3 {
     font-weight: 500;
-    color: #111;
+    color: #888;
     margin-bottom: 8px;
+    font-size: 0.9rem;
+    letter-spacing: 0.09rem;
     text-wrap: balance;
   }
   article h4 {
-    color: #222;
     font-weight: 400;
     letter-spacing: 0.09rem;
     font-size: 0.75rem;
@@ -70,13 +68,14 @@ import { education } from "@cv";
   }
   header {
     display: flex;
-    flex-direction: column;
+    flex-direction: grid-row: inherit;;
     margin-bottom: 20px;
-  }
+    color: #666;
+  }  
   time {
     position: relative;
     top: 0;
-    color: #222;
+    
     font-size: 0.85rem;
   }
   .highlights {
@@ -92,4 +91,11 @@ import { education } from "@cv";
     gap: 5px;
     font-size: 0.8rem;
   }
+  .courses span {
+  display: flex;
+  align-items: flex-start
+  gap: 5px;
+  font-size: 0.78rem;
+  color: #666;
+}
 </style>

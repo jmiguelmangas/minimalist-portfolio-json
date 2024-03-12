@@ -111,12 +111,12 @@
     }
   ],
     "education": [{
-      "institution": "IES Islas Filipinas",
+      "institution": "IES Lázaro Cardenas",
       "url": "https://institution.com/",
-      "area": "App Development",
-      "studyType": "Technical Degree",
-      "startDate": "2001-09-01",
-      "endDate": "2003-09-01",
+      "area": "High School",
+      "studyType": "Technologic Scientific Bach",
+      "startDate": "1999-09-01",
+      "endDate": "2002-09-01",
       "score": "9.0",
       "courses": [
         "SQL and Database management",
