@@ -1,0 +1,32 @@
+---
+import Section from "./src/components/Section.astro";
+import { certificates } from "@cv";
+import Education from "./src/icons/education.astro";
+---
+
+<Section title="Certificates">
+  <ul>
+    {
+      certificates.map(({ name, date, issuer }) => {
+        const Year = new Date(date).getFullYear();
+        return (
+          <li>
+            <article>
+              <header>
+                <span class="edulogo">
+                  <Education />
+                </span>
+                <subheader>
+                  <h3>
+                    {name} at {issuer}
+                  </h3>
+                  <time>{Year}</time>
+                </subheader>
+              </header>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>

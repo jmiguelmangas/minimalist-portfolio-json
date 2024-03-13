@@ -114,14 +114,15 @@
       "institution": "IES Lázaro Cardenas",
       "url": "https://institution.com/",
       "area": "High School",
-      "studyType": "Technologic Scientific Bach",
+      "studyType": "Technologic Scientific Bachelor",
       "startDate": "1999-09-01",
-      "endDate": "2002-09-01",
+      "endDate": "2001-09-01",
       "score": "9.0",
       "courses": [
-        "SQL and Database management",
-        "Development with C, C++",
-        "Software Engineering"
+        "Computer Science and Programming with COBOL",
+        "Operating Systems",
+        "Industrial Technology",
+        "Robotic and Physics"
       ],
       "highlights": [
         "DB1101 - Basic SQL"
@@ -129,7 +130,7 @@
 
     },{"institution": "IES Islas Filipinas",
     "url": "https://www.educa2.madrid.org/web/centro.ies.islasfilipinas.madrid",
-    "area": "App Development",
+    "area": "App Development and Database Management",
     "studyType": "Technical Degree",
     "startDate": "2001-09-01",
     "endDate": "2003-09-01",
@@ -137,7 +138,8 @@
     "courses": [
       "SQL and Database management",
       "Development with C, C++",
-      "Software Engineering"
+      "Software Engineering",
+      "Software Development"
     ],
     "highlights": [
       "DB1101 - Basic SQL"
@@ -149,17 +151,26 @@
       "summary": "There is no spoon."
     }],
     "certificates": [{
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
+      "name": "Python Developer CS50P",
+      "date": "2023-11-1",
+      "issuer": "Harvard Online School",
       "url": "https://certificate.com"
-    }],
-    "publications": [{
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "url": "https://publication.com",
-      "summary": "Description…"
+    },{
+      "name": "IBM Data Science Professional Certificate",
+      "date": "2024-02-1",
+      "issuer": "IBM",
+      "url": "https://certificate.com"
+    },    
+    {
+      "name": "Django Framework for Python Backend Developing",
+      "date": "2023-12-1",
+      "issuer": "Code Academy",
+      "url": "https://certificate.com"
+    },{
+      "name": "HTML5 and CSS3 Certified Course",
+      "date": "2023-05-1",
+      "issuer": "MiMo Programming School",
+      "url": "https://certificate.com"
     }],
     "skills": [{
       "name": "HTML",
@@ -217,7 +228,12 @@
     
     "languages": [{
       "language": "English",
-      "fluency": "Native speaker"
+      "fluency": "Fluent",
+      "Level": "C1"
+    },{
+      "language":"Spanish",
+      "fluency": "Native",
+      "Level": "Native Speaker"
     }],
     "interests": [{
       "name": "Wildlife",
