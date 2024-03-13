@@ -1,28 +1,40 @@
 ---
 import Section from "./src/components/Section.astro";
 import { certificates } from "@cv";
-import Education from "./src/icons/education.astro";
+import Certificate from "./src/icons/certificate.astro";
 ---
 
 <Section title="Certificates">
   <ul>
     {
-      certificates.map(({ name, date, issuer }) => {
+      certificates.map(({ name, date, issuer,highlights }) => {
         const Year = new Date(date).getFullYear();
         return (
           <li>
             <article>
               <header>
                 <span class="edulogo">
-                  <Education />
+                  <Certificate />
                 </span>
+                <p>
+                  <time>{Year}</time>
+                </p>
                 <subheader>
                   <h3>
                     {name} at {issuer}
                   </h3>
-                  <time>{Year}</time>
                 </subheader>
               </header>
+              <footer>
+                <ul class="highlights">
+                    {highlights.map((highlight) => {
+                        return (
+                            <li>
+                            <span>• {highlight}</span>
+                            </li>
+                         );
+                     })}
+              </footer>
             </article>
           </li>
         );
@@ -30,3 +42,38 @@ import Education from "./src/icons/education.astro";
     }
   </ul>
 </Section>
+<style>
+  article h3 {
+    font-size: 0.95rem;
+    margin-right: 15px;
+    font-weight: 500;
+    color: #666;
+  }
+  article subheader {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  article time {
+    letter-spacing: 0.02rem;
+    color: #444;
+    align-items: center;
+    font-size: 0.89rem;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+  article {
+    border-radius: 6px;
+    border: #f2f2f2 solid;
+    background: #fff;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.6rem 0.6rem;
+    margin-bottom: 5px;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+</style>

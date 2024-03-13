@@ -151,26 +151,31 @@
       "summary": "There is no spoon."
     }],
     "certificates": [{
+        "name": "IBM Data Science Professional Certificate",
+        "date": "2024-02-1",
+        "issuer": "IBM",
+        "url": "https://certificate.com",
+        "highlights": ["Covers statistical analysis, machine learning, data visualization, and manipulation.","Practical application of skills through real-world projects and datasets.","Integration of knowledge through a comprehensive final project.","Familiarity with industry-standard tools like IBM Watson Studio and IBM Watson Machine Learning."]
+    },{
       "name": "Python Developer CS50P",
       "date": "2023-11-1",
       "issuer": "Harvard Online School",
-      "url": "https://certificate.com"
-    },{
-      "name": "IBM Data Science Professional Certificate",
-      "date": "2024-02-1",
-      "issuer": "IBM",
-      "url": "https://certificate.com"
+      "url": "https://certificate.com",
+      "highlights": ["a","e"]
     },    
     {
       "name": "Django Framework for Python Backend Developing",
       "date": "2023-12-1",
       "issuer": "Code Academy",
-      "url": "https://certificate.com"
+      "url": "https://certificate.com",
+      "highlights": ["a","e"]
+
     },{
       "name": "HTML5 and CSS3 Certified Course",
       "date": "2023-05-1",
       "issuer": "MiMo Programming School",
-      "url": "https://certificate.com"
+      "url": "https://certificate.com",
+      "highlights": ["a","e"]
     }],
     "skills": [{
       "name": "HTML",
