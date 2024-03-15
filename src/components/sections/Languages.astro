@@ -1,3 +1,30 @@
 ---
 import Section from "./src/components/Section.astro";
+import { languages } from "@cv";
 ---
+
+<Section title="Languages">
+  <ul>
+    {
+      languages.map(({ language, fluency, level }) => {
+        return (
+          <li>
+            <article>
+              <header>
+                <div>
+                  <span class="flag-icon flag-icon-sun" />
+                  <h3>{language}</h3>
+                  <h4>{fluency}</h4>
+                </div>
+              </header>
+              <footer>
+                <p>{level}</p>
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>
+<style></style>

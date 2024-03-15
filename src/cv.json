@@ -228,17 +228,15 @@
     {
       "name": "Swift",
       "level": "Master"
-    }   
-  ],
-    
+    }],
     "languages": [{
       "language": "English",
       "fluency": "Fluent",
-      "Level": "C1"
+      "level": "C1"
     },{
       "language":"Spanish",
       "fluency": "Native",
-      "Level": "Native Speaker"
+      "level": "Native Speaker"
     }],
     "interests": [{
       "name": "Wildlife",
