@@ -5,13 +5,14 @@ import Certificate from "./src/icons/certificate.astro";
 ---
 
 <Section title="Certificates">
-  <ul>
+  <ul class="list_certificates">
     {
       certificates.map(({ name, date, issuer,highlights }) => {
         const Year = new Date(date).getFullYear();
         return (
           <li>
             <article>
+              <superheader>
               <header>
                 <span class="edulogo">
                   <Certificate />
@@ -19,12 +20,13 @@ import Certificate from "./src/icons/certificate.astro";
                 <p>
                   <time>{Year}</time>
                 </p>
-                <subheader>
+              </header>
+              <subheader>
                   <h3>
                     {name} at {issuer}
                   </h3>
-                </subheader>
-              </header>
+              </subheader>
+              </superheader>
               <footer>
                 <ul class="highlights">
                     {highlights.map((highlight) => {
@@ -32,8 +34,8 @@ import Certificate from "./src/icons/certificate.astro";
                             <li>
                             <span>• {highlight}</span>
                             </li>
-                         );
-                     })}
+                        );
+                    })}
               </footer>
             </article>
           </li>
@@ -43,6 +45,12 @@ import Certificate from "./src/icons/certificate.astro";
   </ul>
 </Section>
 <style>
+  ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  gap: 1rem;
+  
+  }
   article h3 {
     font-size: 0.95rem;
     margin-right: 15px;
@@ -51,6 +59,7 @@ import Certificate from "./src/icons/certificate.astro";
   }
   article subheader {
     display: flex;
+    
     flex-wrap: wrap;
   }
   article time {
@@ -70,11 +79,17 @@ import Certificate from "./src/icons/certificate.astro";
     font-weight: 500;
     padding: 0.6rem 0.6rem;
     margin-bottom: 5px;
+    text-wrap: wrap;
+    height: 100%;
   }
   header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    margin-right: 1rem;
+  }
+  superheader{
+    display: flex;
     
   }
   footer{

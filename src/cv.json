@@ -161,14 +161,14 @@
       "date": "2023-11-1",
       "issuer": "Harvard Online School",
       "url": "https://certificate.com",
-      "highlights": [" Covers essential Python concepts such as data types, control structures, functions, and object-oriented programming principles.","Offers hands-on experience with Python through a series of programming assignments and projects, allowing learners to apply their knowledge to real-world problems.","eaches problem-solving strategies and algorithms using Python, equipping me with the ability to tackle coding challenges efficiently."]
+      "highlights": [" Covers essential Python concepts such as data types, control structures, functions, and object-oriented programming principles.","Offers hands-on experience with Python through a series of programming assignments and projects, allowing learners to apply their knowledge to real-world problems.","I learned Problem-solving strategies and algorithms using Python, equipping me with the ability to tackle coding challenges efficiently."]
     },    
     {
       "name": "Django Framework for Python Backend Developing",
       "date": "2023-12-1",
       "issuer": "Code Academy",
       "url": "https://certificate.com",
-      "highlights": ["Covers the core concepts and components of the Django web framework, including models, views, templates, URLs, and forms.","Provides practical experience building web applications using Django through guided projects and exercises.","Teaches how to integrate databases with Django applications, including working with SQLite and other popular database systems like PostgreSQL and MySQL.","Explains how to implement user authentication and authorization features in Django applications, including user registration, login, and permissions management.","Introduces the Django Rest Framework for building RESTful APIs, enabling learners to create powerful and scalable web APIs with Django.","Discusses best practices for deploying Django applications to production servers and hosting platforms, ensuring how to make their projects accessible to users."]
+      "highlights": ["Covers the core concepts and components of the Django web framework, including models, views, templates, URLs, and forms.","I learned how to integrate databases with Django applications, including working with SQLite and other popular database systems like PostgreSQL and MySQL.","Learned about Django Rest Framework for building RESTful APIs, enabling me to create powerful and scalable web APIs with Django."]
 
     },{
       "name": "HTML5 and CSS3 Certified Course",
