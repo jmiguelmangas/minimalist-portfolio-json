@@ -29,10 +29,7 @@ import { work } from "@cv";
                     {highlights.map((highlight) => {
                       return (
                         <li>
-                          <span>
-                            <Arrow />
-                            {highlight}
-                          </span>
+                          <span>- {highlight}</span>
                         </li>
                       );
                     })}
@@ -88,5 +85,6 @@ import { work } from "@cv";
     align-items: flex-start;
     gap: 5px;
     font-size: 0.8rem;
+    text-wrap: wrap;
   }
 </style>
