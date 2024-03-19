@@ -266,19 +266,19 @@
     ]
     },
     {
-      "name": "Project",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "isActive": "True",
-      "highlights": [
-        "Won award at AIHacks 2016",
-        "Won award at AIHacks 2016"
+      "name": "CV Fullstack Astro Minimalist",
+      "startDate": "2024-03-01",
+      "endDate": "2024-03-19",
+      "description": "Project Based on the Minimalist JSON Web Portfolio by Bartosz Jarocki, improved and completed by me",
+      "isActive": "No",
+      "highlights": ["Read all the information from CV.json","Highly adaptable to your own profile","Menu to open the command Palette in which you could interact with my social media list and print a printer friendly copy of my CV"
       ],
-      "url": "https://project.com/",
+      "url": "https://.com/",
  "labels": [
    "HTML",
-   "CSS"
+   "CSS",
+   "Astro",
+   "Javascript"
  ]
     }
   ]
