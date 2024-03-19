@@ -1,8 +1,7 @@
 ---
-import Section from "./src/components/Section.astro";
+import Section from "@/components/Section.astro";
 import { education } from "@cv";
-import { certificates } from "@cv"
-import Education from "./src/icons/education.astro";
+import EducationIcon from "@/icons/educationastro.astro";
 
 ---
 
@@ -10,7 +9,7 @@ import Education from "./src/icons/education.astro";
   <ul>
     {
       education.map(
-        ({ institution, startDate, endDate, area,studyType, courses, highlights }) => {
+        ({ institution, startDate, endDate, area,studyType, courses}) => {
           const startYear = new Date(startDate).getFullYear();
           const endYear =
             endDate != null ? new Date(endDate).getFullYear() : "Current Job";
@@ -20,7 +19,7 @@ import Education from "./src/icons/education.astro";
               <article>
                 <header>
       
-                    <span class="edulogo"><Education /></span>
+                    <span class="edulogo"><EducationIcon /></span>
                     <subheader>
                     <h3>{studyType} in {area}</h3>
                     <h4>{institution}</h4>
@@ -37,14 +36,14 @@ import Education from "./src/icons/education.astro";
                       </li>
                     );
                   })}
-          
-
+                  </ul>
+                </footer>
               </article>
             </li>
           );
         }
       )
-      
+      } 
   </ul>
 </Section>
 <style>

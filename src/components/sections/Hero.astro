@@ -1,13 +1,12 @@
 ---
 import { basics } from "@cv";
-import Section from "./src/components/Section.astro";
-import Mail from "./src/icons/Mail.astro";
-import Phone from "./src/icons/Phone.astro";
-import X from "./src/icons/X.astro";
-import LinkedIn from "./src/icons/LinkedIn.astro";
-import Github from "./src/icons/Github.astro";
-import WorldMap from "./src/icons/WorldMap.astro";
-import { callGetStaticPaths } from "node_modules/astro/dist/core/render/route-cache";
+import Section from "@/components/Section.astro";
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import X from "@/icons/X.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import Github from "@/icons/GitHub.astro";
+import WorldMap from "@/icons/WorldMap.astro";
 const { name, label, image, location, profiles, phone, email } = basics;
 const { city, region } = location;
 const SOCIAL_ICONS: Record<string, any> = {
@@ -51,7 +50,7 @@ const SOCIAL_ICONS: Record<string, any> = {
           )
         }
         {
-          profiles.map(({ network, url, username }) => {
+          profiles.map(({ network, url }) => {
             const Icon = SOCIAL_ICONS[network];
             return (
               <a

@@ -1,41 +1,42 @@
 ---
-import Section from "./src/components/Section.astro";
+import Section from "@/components/Section.astro";
 import { certificates } from "@cv";
-import Certificate from "./src/icons/certificate.astro";
+import Certificate from "@/icons/certificate.astro";
 ---
 
 <Section title="Certificates">
-  <ul class="list_certificates">
+  <ul>
     {
-      certificates.map(({ name, date, issuer,highlights }) => {
+      certificates.map(({ name, date, issuer, highlights }) => {
         const Year = new Date(date).getFullYear();
         return (
           <li>
             <article>
               <superheader>
-              <header>
-                <span class="edulogo">
-                  <Certificate />
-                </span>
-                <p>
-                  <time>{Year}</time>
-                </p>
-              </header>
-              <subheader>
+                <header>
+                  <span class="edulogo">
+                    <Certificate />
+                  </span>
+                  <p>
+                    <time>{Year}</time>
+                  </p>
+                </header>
+                <subheader>
                   <h3>
                     {name} at {issuer}
                   </h3>
-              </subheader>
+                </subheader>
               </superheader>
               <footer>
                 <ul class="highlights">
-                    {highlights.map((highlight) => {
-                        return (
-                            <li>
-                            <span>• {highlight}</span>
-                            </li>
-                        );
-                    })}
+                  {highlights.map((highlight) => {
+                    return (
+                      <li>
+                        <span>• {highlight}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
               </footer>
             </article>
           </li>
@@ -45,11 +46,10 @@ import Certificate from "./src/icons/certificate.astro";
   </ul>
 </Section>
 <style>
-  ul{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-  gap: 1rem;
-  
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 1rem;
   }
   article h3 {
     font-size: 0.95rem;
@@ -59,7 +59,7 @@ import Certificate from "./src/icons/certificate.astro";
   }
   article subheader {
     display: flex;
-    
+
     flex-wrap: wrap;
   }
   article time {
@@ -88,15 +88,12 @@ import Certificate from "./src/icons/certificate.astro";
     align-items: center;
     margin-right: 1rem;
   }
-  superheader{
+  superheader {
     display: flex;
-    
   }
-  footer{
+  footer {
     padding: 0.5rem 1rem;
     color: #666;
     text-indent: 0%;
   }
 </style>
-
-
